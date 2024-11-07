@@ -1,0 +1,108 @@
+this is a list of  mandatory and optional fields for the Malaysian e-Invoice, based on the provided guidelines:
+
+///check this link :-  https://www.complyance.io/malaysia-blog/malaysia-lhdn-e-invoicing-required-fields
+
+Mandatory Fields
+
+
+(a) Parties
+       (1) Supplier’s Name
+       (2) Buyer’s Name
+
+
+(b) Supplier’s Details
+
+
+      (3)  Supplier’s TIN
+      (4)  Supplier’s Registration / Identification Number / Passport Number
+      (5)  Supplier’s SST Registration Number (Mandatory only if SST-registered)
+      (6)  Supplier’s Tourism Tax Registration Number (Mandatory only if tourism tax-registered)
+
+
+(c) Buyer’s Details
+
+
+    (7) Buyer’s TIN
+    (8) Buyer’s Registration / Identification Number / Passport Number
+    (9) Buyer’s SST Registration Number (Mandatory only if SST-registered)
+
+
+
+(d) Address
+
+    (10) Supplier’s Address
+    (11) Buyer’s Address
+
+
+(e) Contact Number
+
+    (12)  Supplier’s Contact Number
+    (13)  Buyer’s Contact Number
+
+(f) Invoice Details
+
+
+    (14)  e-Invoice Version
+    (15)  e-Invoice Type
+    (16)  e-Invoice Code / Number
+    (17)  e-Invoice Date and Time
+    (18)  Issuer’s Digital Signature
+    (19)  Invoice Currency Code
+    (20)  Currency Exchange Rate (Mandatory if applicable)
+    (21)  Tax Type (Mandatory if applicable)
+    (22)  Tax Rate (Mandatory if applicable)
+    (23)  Tax Amount (Mandatory if applicable)
+    (24)  Details of Tax Exemption (Mandatory if tax exemption is applicable)
+    (25)  Amount Exempted from Tax (Mandatory if tax exemption is applicable)
+    (26)  Total Including Tax
+    (27)  Total Payable Amount
+
+
+Optional Fields
+
+
+Supplier’s Details
+
+Supplier’s e-mail
+Supplier’s Malaysia Standard Industrial Classification (MSIC) Code
+Supplier’s Business Activity Description
+
+
+Buyer’s Details
+
+Buyer’s e-mail
+
+Invoice Details
+Original e-Invoice Reference Number (For credit, debit, or refund notes)
+Frequency of Billing
+Billing Period
+
+
+Products / Services
+
+Classification
+Description of Product or Service
+Unit Price
+Subtotal
+Total Excluding Tax
+Total Net Amount
+Rounding Amount
+Total Taxable Amount Per Tax Type
+Quantity
+Measurement
+Discount Rate
+Discount Amount
+Fee / Charge Rate
+Fee / Charge Amount
+
+
+Payment Info
+
+
+Payment Mode
+Supplier's Bank Account Number
+Payment Terms
+Prepayment Amount
+Prepayment Date
+Prepayment Reference Number
+Bill Reference Number
