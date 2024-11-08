@@ -22,7 +22,6 @@ const authController = require('../controllers/authController');
  * Returns:
  * - A JSON response containing:
  *   - accessToken: JWT token for authorized access.
- *   - tokenType: Type of token issued (usually 'Bearer').
  *   - expiresIn: Token expiration time in seconds.
  *   - scope: Scope of access granted.
  
@@ -31,7 +30,7 @@ const authController = require('../controllers/authController');
 
 router.post('/login/intermediary', authController.loginAsIntermediary);
 
-// store the invoice access token  for future use
+// store the invoice access token in local storage which needs to refreshed after expiry time  for future use
 
 
 

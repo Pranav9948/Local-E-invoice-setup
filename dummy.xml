@@ -152,89 +152,23 @@
 	<cac:PrepaidPayment>
 		<cbc:ID>E12345678912</cbc:ID>
 		<cbc:PaidAmount currencyID="MYR">1.00</cbc:PaidAmount>
-		<cbc:PaidDate>2000-01-01</cbc:PaidDate>
-		<cbc:PaidTime>12:00:00Z</cbc:PaidTime>
+		<cbc:InstructionNote>Sample Instruction Note</cbc:InstructionNote>
 	</cac:PrepaidPayment>
-	<cac:AllowanceCharge>
-		<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
-		<cbc:AllowanceChargeReason>Sample Description</cbc:AllowanceChargeReason>
-		<cbc:Amount currencyID="MYR">100</cbc:Amount>
-	</cac:AllowanceCharge>
-	<cac:AllowanceCharge>
-		<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
-		<cbc:AllowanceChargeReason>Service charge</cbc:AllowanceChargeReason>
-		<cbc:Amount currencyID="MYR">100</cbc:Amount>
-	</cac:AllowanceCharge>
-	<cac:TaxTotal>
-		<cbc:TaxAmount currencyID="MYR">87.63</cbc:TaxAmount>
-		<cac:TaxSubtotal>
-			<cbc:TaxableAmount currencyID="MYR">87.63</cbc:TaxableAmount>
-			<cbc:TaxAmount currencyID="MYR">87.63</cbc:TaxAmount>
-			<cac:TaxCategory>
-				<cbc:ID>01</cbc:ID>
-				<cac:TaxScheme>
-					<cbc:ID schemeID="UN/ECE 5153" schemeAgencyID="6">OTH</cbc:ID>
-				</cac:TaxScheme>
-			</cac:TaxCategory>
-		</cac:TaxSubtotal>
-	</cac:TaxTotal>
-	<cac:LegalMonetaryTotal>
-		<cbc:LineExtensionAmount currencyID="MYR">1436.50</cbc:LineExtensionAmount>
-		<cbc:TaxExclusiveAmount currencyID="MYR">1436.50</cbc:TaxExclusiveAmount>
-		<cbc:TaxInclusiveAmount currencyID="MYR">1436.50</cbc:TaxInclusiveAmount>
-		<cbc:AllowanceTotalAmount currencyID="MYR">1436.50</cbc:AllowanceTotalAmount>
-		<cbc:ChargeTotalAmount currencyID="MYR">1436.50</cbc:ChargeTotalAmount>
-		<cbc:PayableRoundingAmount currencyID="MYR">0.30</cbc:PayableRoundingAmount>
-		<cbc:PayableAmount currencyID="MYR">1436.50</cbc:PayableAmount>
-	</cac:LegalMonetaryTotal>
 	<cac:InvoiceLine>
-		<cbc:ID>1234</cbc:ID>
-		<cbc:InvoicedQuantity unitCode="C62">1</cbc:InvoicedQuantity>
-		<cbc:LineExtensionAmount currencyID="MYR">1436.50</cbc:LineExtensionAmount>
-		<cac:AllowanceCharge>
-			<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
-			<cbc:AllowanceChargeReason>Sample Description</cbc:AllowanceChargeReason>
-			<cbc:MultiplierFactorNumeric>0.15</cbc:MultiplierFactorNumeric>
-			<cbc:Amount currencyID="MYR">100</cbc:Amount>
-		</cac:AllowanceCharge>
-		<cac:AllowanceCharge>
-			<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
-			<cbc:AllowanceChargeReason>Sample Description</cbc:AllowanceChargeReason>
-			<cbc:MultiplierFactorNumeric>0.10</cbc:MultiplierFactorNumeric>
-			<cbc:Amount currencyID="MYR">100</cbc:Amount>
-		</cac:AllowanceCharge>
+		<cbc:ID>1</cbc:ID>
+		<cbc:InvoicedQuantity unitCode="NAR">2</cbc:InvoicedQuantity>
+		<cbc:LineExtensionAmount currencyID="MYR">300</cbc:LineExtensionAmount>
 		<cac:TaxTotal>
-			<cbc:TaxAmount currencyID="MYR">1460.50</cbc:TaxAmount>
-			<cac:TaxSubtotal>
-				<cbc:TaxableAmount currencyID="MYR">1460.50</cbc:TaxableAmount>
-				<cbc:TaxAmount currencyID="MYR">0</cbc:TaxAmount>
-				<cac:TaxCategory>
-					<cbc:ID>E</cbc:ID>
-					<cbc:Percent>6.00</cbc:Percent>
-					<cbc:TaxExemptionReason>Exempt New Means of Transport</cbc:TaxExemptionReason>
-					<cac:TaxScheme>
-						<cbc:ID schemeID="UN/ECE 5153" schemeAgencyID="6">OTH</cbc:ID>
-					</cac:TaxScheme>
-				</cac:TaxCategory>
-			</cac:TaxSubtotal>
+			<cbc:TaxAmount currencyID="MYR">90</cbc:TaxAmount>
 		</cac:TaxTotal>
 		<cac:Item>
-			<cbc:Description>Laptop Peripherals</cbc:Description>
-			<cac:OriginCountry>
-				<cbc:IdentificationCode>MYS</cbc:IdentificationCode>
-			</cac:OriginCountry>
-			<cac:CommodityClassification>
-				<cbc:ItemClassificationCode listID="PTC">847330</cbc:ItemClassificationCode>
-			</cac:CommodityClassification>
-			<cac:CommodityClassification>
-				<cbc:ItemClassificationCode listID="CLASS">847330</cbc:ItemClassificationCode>
-			</cac:CommodityClassification>
+			<cbc:Description>Laptop</cbc:Description>
+			<cbc:CommodityClassification>
+				<cbc:ItemClassificationCode>84713010</cbc:ItemClassificationCode>
+			</cbc:CommodityClassification>
 		</cac:Item>
 		<cac:Price>
-			<cbc:PriceAmount currencyID="MYR">17</cbc:PriceAmount>
+			<cbc:PriceAmount currencyID="MYR">100</cbc:PriceAmount>
 		</cac:Price>
-		<cac:ItemPriceExtension>
-			<cbc:Amount currencyID="MYR">100</cbc:Amount>
-		</cac:ItemPriceExtension>
 	</cac:InvoiceLine>
 </Invoice>

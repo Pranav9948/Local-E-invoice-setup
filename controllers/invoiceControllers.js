@@ -4,7 +4,6 @@ const fs = require("fs");
 const axios = require("axios");
 
 exports.submitDocuments = async (req, res) => {
-  ////todo :- we need to convert the json based document into base64 before calling api request so need to build that function too
 
   const { authorizationtoken } = req.headers;
 
@@ -18,21 +17,20 @@ exports.submitDocuments = async (req, res) => {
     });
   }
 
-  ////todo :- -here call a function to convert document into UBL (Universal Business Language) format, used for submitting structured invoice data to the Malaysian government as per the E-Invoice requirements.
+  ///convert the document into base64 encoded version
 
-  //   const UBlFormatDocument = convertDataToUBlFormat(documents);
-
-  ////todo :- we need to convert the xml based document into base64 before calling api request so need to build that function too
 
   const convertedDocument = xmlToBase64(xmlData);
 
+// hash the base64 encoded document
+
   const documentHash = base64XmlToSHA256(convertedDocument);
 
-  console.log("documentHash", documentHash);
+  console.log("documentHash".america, documentHash);
 
 
 
-  const codeNumber = "INV12345"; // You can adjust this value as needed
+  const codeNumber = "INV12345"; 
 
   // Structure the payload for the API request
   const payload = {
@@ -41,7 +39,7 @@ exports.submitDocuments = async (req, res) => {
         format: "XML",  
         document: convertedDocument,  // The Base64-encoded XML document
         documentHash: documentHash,  // The SHA-256 hash of the Base64 document
-        codeNumber: codeNumber,  // The code number (e.g., invoice number)
+        codeNumber: codeNumber, 
       },
     ],
   };
@@ -53,22 +51,24 @@ exports.submitDocuments = async (req, res) => {
     const response = await axios.post(
       "https://preprod-api.myinvois.hasil.gov.my/api/v1.0/documentsubmissions/", //add correct baseurl here
        payload ,
-    //   {
-    //     headers: {
-    //       "Authorization": `Bearer ${authorizationtoken}`, 
-    //       "Contenttype": "application/json",
-    //     },
-    //   }
-
+    
     {
         headers: {
-          "Authorization": `Bearer ${authorizationtoken}`, // Bearer token for authorization
-          "Accept": "application/json", // Accept header indicating JSON response
-          "Accept-Language": "en", // Language preference for response (optional)
-          "Content-Type": "application/json", // Content type set to JSON
+          "Authorization": `Bearer ${authorizationtoken}`,
+          "Accept": "application/json", 
+          "Accept-Language": "en", 
+          "Content-Type": "application/json", 
         },
       }
     );
+
+    console.log('document submitted successfully'.bgMagenta.white)
+
+    console.log('result'.blue,{
+      submissionUID: response.data.submissionUID,
+      acceptedDocuments: response.data.acceptedDocuments,   
+      rejectedDocuments: response.data.rejectedDocuments,
+    })
 
     res.status(202).json({
       submissionUID: response.data.submissionUID,
@@ -77,7 +77,7 @@ exports.submitDocuments = async (req, res) => {
     });
   } catch (error) {
     // Handle errors and return response
-    console.log(error?.response?.data?.error,error?.status);
+    console.log("error occured".red,error?.response?.data?.error,error?.status);
 
     res.status(500).send({error:error?.response?.data?.error,status:error?.status})
   }

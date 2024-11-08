@@ -1,4 +1,5 @@
 const axios = require('axios');
+var colors = require('colors');
 
 
 exports.loginAsIntermediary = async (req, res) => {
@@ -30,7 +31,8 @@ exports.loginAsIntermediary = async (req, res) => {
             }
         );
 
-        console.log('response',response.status)
+        console.log('login sucessfully'.green)
+        console.log('response'.yellow,response.status)
 
         
         if (response.status === 200) {
@@ -45,7 +47,7 @@ exports.loginAsIntermediary = async (req, res) => {
         }
     } catch (error) {
 
-        console.log('error',error.response.data)
+        console.log('error'.red,error.response.data)
         
         res.status(400).json({ error: error.response?.data?.error || 'Authentication failed' });
     }

@@ -8,8 +8,7 @@ const {submitDocuments} = require('../controllers/invoiceControllers');
  *
  * Required Parameters in Headers:
 
- * - Content-Type: Defines the document submission format, either 'application/json' or 'application/xml'.:- mentioned in doc
- * - onbehalfofTIN: TIN of the taxpayer represented by the intermediary.
+ 
  * - Authorization: Bearer access token obtained after successful login.
 
 
@@ -19,8 +18,8 @@ const {submitDocuments} = require('../controllers/invoiceControllers');
  *    - Each document object should have:
  *      - format: Format of the document, either 'XML' or 'JSON'.
  *      - document: Base64-encoded string of the document content (JSON/XML).
- *      - documentHash: SHA256 hash of the document content for integrity verification.
- *      - codeNumber: Unique reference number for internal tracking (e.g., INV12345).
+ *      - documentHash: SHA256 hash of the Base64-encoded document.
+ *      - codeNumber: Unique reference number for internal tracking 
  *
  * Output:
  * - Returns a JSON response containing:
