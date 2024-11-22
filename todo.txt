@@ -1,9 +1,0 @@
-
-Todos
-
-(i) write a function . for submitting invoice we need to convert the document as per UBL (Universal Business Language) format, used for submitting structured invoice data to the Malaysian government as per the E-Invoice requirements. 
-(ii) write a function to convert document to base 64 .. bcz we need to pass document in base 64 for submitting invoice
-
-
-
-

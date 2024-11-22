@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const {submitDocuments} = require('../controllers/invoiceControllers');
+const {submitDocuments,getInvoicedocumentById,getInvoicedocumentDetails} = require('../controllers/invoiceControllers');
 
 /**
  * Controller function to submit documents to MyInvois System.
@@ -30,6 +30,9 @@ const {submitDocuments} = require('../controllers/invoiceControllers');
 
 
 router.post('/submit',submitDocuments);
+router.get('/getInvoicedocumentById',getInvoicedocumentById);
+router.get('/getInvoicedocumentDetails',getInvoicedocumentDetails);
+
 
 
 

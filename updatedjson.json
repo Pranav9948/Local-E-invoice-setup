@@ -1,0 +1,800 @@
+convertedUBLDocument {
+  "_D": "urn:oasis:names:specification:ubl:schema:xsd:Invoice-2",
+  "_A": "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2",
+  "_B": "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2",
+  "Invoice": [
+    {
+      "ID": [
+        {
+          "_": "INV12345"
+        }
+      ],
+      "IssueDate": [
+        {
+          "_": "2024-11-16"
+        }
+      ],
+      "IssueTime": [
+        {
+          "_": "15:30:00Z"
+        }
+      ],
+      "InvoiceTypeCode": [
+        {
+          "_": "01",
+          "listVersionID": "1.0"
+        }
+      ],
+      "DocumentCurrencyCode": [
+        {
+          "_": "MYR"
+        }
+      ],
+      "TaxCurrencyCode": [
+        {
+          "_": "MYR"
+        }
+      ],
+      "AccountingSupplierParty": [
+        {
+          "Party": [
+            {
+              "IndustryClassificationCode": [
+                {
+                  "_": "79110",
+                  "name": "Travel agency activities"
+                }
+              ],
+              "PartyIdentification": [
+                {
+                  "ID": [
+                    {
+                      "_": "IG24357571080",
+                      "schemeID": "TIN"
+                    }
+                  ]
+                },
+                {
+                  "ID": [
+                    {
+                      "_": "Z5713582",
+                      "schemeID": "PASSPORT"
+                    }
+                  ]
+                }
+              ],
+              "PostalAddress": [
+                {
+                  "CityName": [
+                    {
+                      "_": "Kuala Lumpur"
+                    }
+                  ],
+                  "PostalZone": [
+                    {
+                      "_": "50480"
+                    }
+                  ],
+                  "CountrySubentityCode": [
+                    {
+                      "_": "10"
+                    }
+                  ],
+                  "AddressLine": [
+                    {
+                      "Line": [
+                        {
+                          "_": "Lot 66"
+                        }
+                      ]
+                    },
+                    {
+                      "Line": [
+                        {
+                          "_": "Bangunan Merdeka"
+                        }
+                      ]
+                    },
+                    {
+                      "Line": [
+                        {
+                          "_": "Persiaran Jaya"
+                        }
+                      ]
+                    }
+                  ],
+                  "Country": [
+                    {
+                      "IdentificationCode": [
+                        {
+                          "_": "MYS",
+                          "listID": "ISO3166-1",
+                          "listAgencyID": "6"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "PartyLegalEntity": [
+                {
+                  "RegistrationName": [
+                    {
+                      "_": "Globetrotter Getaways"
+                    }
+                  ]
+                }
+              ],
+              "Contact": [
+                {
+                  "Telephone": [
+                    {
+                      "_": "+91-7736228299"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "AccountingCustomerParty": [
+        {
+          "Party": [
+            {
+              "PostalAddress": [
+                {
+                  "CityName": [
+                    {
+                      "_": "Trivandrum"
+                    }
+                  ],
+                  "CountrySubentityCode": [
+                    {
+                      "_": "17"
+                    }
+                  ],
+                  "AddressLine": [
+                    {
+                      "Line": [
+                        {
+                          "_": "Pranavam"
+                        }
+                      ]
+                    },
+                    {
+                      "Line": [
+                        {
+                          "_": "TC 9/618"
+                        }
+                      ]
+                    },
+                    {
+                      "Line": [
+                        {
+                          "_": "Pariyamadom Lane"
+                        }
+                      ]
+                    },
+                    {
+                      "Line": [
+                        {
+                          "_": "Kallampally, Sreekaryam"
+                        }
+                      ]
+                    }
+                  ],
+                  "Country": [
+                    {
+                      "IdentificationCode": [
+                        {
+                          "_": "IND",
+                          "listID": "ISO3166-1",
+                          "listAgencyID": "6"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "PartyLegalEntity": [
+                {
+                  "RegistrationName": [
+                    {
+                      "_": "John doe"
+                    }
+                  ]
+                }
+              ],
+              "PartyIdentification": [
+                {
+                  "ID": [
+                    {
+                      "_": "EI00000000020",
+                      "schemeID": "TIN"
+                    }
+                  ]
+                },
+                {
+                  "ID": [
+                    {
+                      "_": "NA",
+                      "schemeID": "BRN"
+                    }
+                  ]
+                },
+                {
+                  "ID": [
+                    {
+                      "_": "NA",
+                      "schemeID": "SST"
+                    }
+                  ]
+                },
+                {
+                  "ID": [
+                    {
+                      "_": "NA",
+                      "schemeID": "TTX"
+                    }
+                  ]
+                }
+              ],
+              "Contact": [
+                {
+                  "Telephone": [
+                    {
+                      "_": "917736228299"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "LegalMonetaryTotal": [
+        {
+          "LineExtensionAmount": [
+            {
+              "_": 9400,
+              "currencyID": "MYR"
+            }
+          ],
+          "TaxExclusiveAmount": [
+            {
+              "_": 9400,
+              "currencyID": "MYR"
+            }
+          ],
+          "TaxInclusiveAmount": [
+            {
+              "_": 14570,
+              "currencyID": "MYR"
+            }
+          ],
+          "PayableAmount": [
+            {
+              "_": 14570,
+              "currencyID": "MYR"
+            }
+          ]
+        }
+      ],
+      "TaxTotal": [
+        {
+          "TaxAmount": [
+            {
+              "_": 5170,
+              "currencyID": "MYR"
+            }
+          ],
+          "TaxSubtotal": [
+            {
+              "TaxableAmount": [
+                {
+                  "_": 5170,
+                  "currencyID": "MYR"
+                }
+              ],
+              "TaxAmount": [
+                {
+                  "_": 5170,
+                  "currencyID": "MYR"
+                }
+              ],
+              "TaxCategory": [
+                {
+                  "ID": [
+                    {
+                      "_": "01"
+                    }
+                  ],
+                  "TaxScheme": [
+                    {
+                      "ID": [
+                        {
+                          "_": "OTH",
+                          "schemeID": "UN/ECE 5153",
+                          "schemeAgencyID": "6"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "InvoiceLine": [
+        {
+          "ID": [
+            {
+              "_": "001"
+            }
+          ],
+          "InvoicedQuantity": [
+            {
+              "_": 1,
+              "unitCode": "IE"
+            }
+          ],
+          "LineExtensionAmount": [
+            {
+              "_": 6600,
+              "currencyID": "MYR"
+            }
+          ],
+          "TaxTotal": [
+            {
+              "TaxAmount": [
+                {
+                  "_": 0,
+                  "currencyID": "MYR"
+                }
+              ],
+              "TaxSubtotal": [
+                {
+                  "TaxableAmount": [
+                    {
+                      "_": 0,
+                      "currencyID": "MYR"
+                    }
+                  ],
+                  "TaxAmount": [
+                    {
+                      "_": 0,
+                      "currencyID": "MYR"
+                    }
+                  ],
+                  "TaxCategory": [
+                    {
+                      "ID": [
+                        {
+                          "_": "03"
+                        }
+                      ],
+                      "TaxScheme": [
+                        {
+                          "ID": [
+                            {
+                              "_": "OTH",
+                              "schemeID": "UN/ECE 5153",
+                              "schemeAgencyID": "6"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "Item": [
+            {
+              "CommodityClassification": [
+                {
+                  "ItemClassificationCode": [
+                    {
+                      "_": "008",
+                      "listID": "CLASS"
+                    }
+                  ]
+                }
+              ],
+              "Description": [
+                {
+                  "_": "Jungle Wildlife Safari "
+                }
+              ],
+              "OriginCountry": [
+                {
+                  "IdentificationCode": [
+                    {
+                      "_": "MYS"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "Price": [
+            {
+              "PriceAmount": [
+                {
+                  "_": 6600,
+                  "currencyID": "MYR"
+                }
+              ]
+            }
+          ],
+          "ItemPriceExtension": [
+            {
+              "Amount": [
+                {
+                  "_": 6600,
+                  "currencyID": "MYR"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ID": [
+            {
+              "_": "002"
+            }
+          ],
+          "InvoicedQuantity": [
+            {
+              "_": 2,
+              "unitCode": "IE"
+            }
+          ],
+          "LineExtensionAmount": [
+            {
+              "_": 200,
+              "currencyID": "MYR"
+            }
+          ],
+          "TaxTotal": [
+            {
+              "TaxAmount": [
+                {
+                  "_": 0,
+                  "currencyID": "MYR"
+                }
+              ],
+              "TaxSubtotal": [
+                {
+                  "TaxableAmount": [
+                    {
+                      "_": 0,
+                      "currencyID": "MYR"
+                    }
+                  ],
+                  "TaxAmount": [
+                    {
+                      "_": 0,
+                      "currencyID": "MYR"
+                    }
+                  ],
+                  "TaxCategory": [
+                    {
+                      "ID": [
+                        {
+                          "_": "03"
+                        }
+                      ],
+                      "TaxScheme": [
+                        {
+                          "ID": [
+                            {
+                              "_": "OTH",
+                              "schemeID": "UN/ECE 5153",
+                              "schemeAgencyID": "6"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "Item": [
+            {
+              "CommodityClassification": [
+                {
+                  "ItemClassificationCode": [
+                    {
+                      "_": "008",
+                      "listID": "CLASS"
+                    }
+                  ]
+                }
+              ],
+              "Description": [
+                {
+                  "_": "boat transportation from Goa International Airport to undefined"
+                }
+              ],
+              "OriginCountry": [
+                {
+                  "IdentificationCode": [
+                    {
+                      "_": "MYS"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "Price": [
+            {
+              "PriceAmount": [
+                {
+                  "_": 200,
+                  "currencyID": "MYR"
+                }
+              ]
+            }
+          ],
+          "ItemPriceExtension": [
+            {
+              "Amount": [
+                {
+                  "_": 200,
+                  "currencyID": "MYR"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ID": [
+            {
+              "_": "003"
+            }
+          ],
+          "InvoicedQuantity": [
+            {
+              "_": 2,
+              "unitCode": "IE"
+            }
+          ],
+          "LineExtensionAmount": [
+            {
+              "_": 400,
+              "currencyID": "MYR"
+            }
+          ],
+          "TaxTotal": [
+            {
+              "TaxAmount": [
+                {
+                  "_": 0,
+                  "currencyID": "MYR"
+                }
+              ],
+              "TaxSubtotal": [
+                {
+                  "TaxableAmount": [
+                    {
+                      "_": 0,
+                      "currencyID": "MYR"
+                    }
+                  ],
+                  "TaxAmount": [
+                    {
+                      "_": 0,
+                      "currencyID": "MYR"
+                    }
+                  ],
+                  "TaxCategory": [
+                    {
+                      "ID": [
+                        {
+                          "_": "03"
+                        }
+                      ],
+                      "TaxScheme": [
+                        {
+                          "ID": [
+                            {
+                              "_": "OTH",
+                              "schemeID": "UN/ECE 5153",
+                              "schemeAgencyID": "6"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "Item": [
+            {
+              "CommodityClassification": [
+                {
+                  "ItemClassificationCode": [
+                    {
+                      "_": "008",
+                      "listID": "CLASS"
+                    }
+                  ]
+                }
+              ],
+              "Description": [
+                {
+                  "_": "land transportation from calangutte Beach to undefined"
+                }
+              ],
+              "OriginCountry": [
+                {
+                  "IdentificationCode": [
+                    {
+                      "_": "MYS"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "Price": [
+            {
+              "PriceAmount": [
+                {
+                  "_": 400,
+                  "currencyID": "MYR"
+                }
+              ]
+            }
+          ],
+          "ItemPriceExtension": [
+            {
+              "Amount": [
+                {
+                  "_": 400,
+                  "currencyID": "MYR"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ID": [
+            {
+              "_": "004"
+            }
+          ],
+          "InvoicedQuantity": [
+            {
+              "_": 1,
+              "unitCode": "IE"
+            }
+          ],
+          "LineExtensionAmount": [
+            {
+              "_": "2200",
+              "currencyID": "MYR"
+            }
+          ],
+          "TaxTotal": [
+            {
+              "TaxAmount": [
+                {
+                  "_": 0,
+                  "currencyID": "MYR"
+                }
+              ],
+              "TaxSubtotal": [
+                {
+                  "TaxableAmount": [
+                    {
+                      "_": 0,
+                      "currencyID": "MYR"
+                    }
+                  ],
+                  "TaxAmount": [
+                    {
+                      "_": 0,
+                      "currencyID": "MYR"
+                    }
+                  ],
+                  "TaxCategory": [
+                    {
+                      "ID": [
+                        {
+                          "_": "03"
+                        }
+                      ],
+                      "TaxScheme": [
+                        {
+                          "ID": [
+                            {
+                              "_": "OTH",
+                              "schemeID": "UN/ECE 5153",
+                              "schemeAgencyID": "6"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "Item": [
+            {
+              "CommodityClassification": [
+                {
+                  "ItemClassificationCode": [
+                    {
+                      "_": "008",
+                      "listID": "CLASS"
+                    }
+                  ]
+                }
+              ],
+              "Description": [
+                {
+                  "_": "Ocean View Deluxe Room"
+                }
+              ],
+              "OriginCountry": [
+                {
+                  "IdentificationCode": [
+                    {
+                      "_": "MYS"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "Price": [
+            {
+              "PriceAmount": [
+                {
+                  "_": 2200,
+                  "currencyID": "MYR"
+                }
+              ]
+            }
+          ],
+          "ItemPriceExtension": [
+            {
+              "Amount": [
+                {
+                  "_": "2200",
+                  "currencyID": "MYR"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "Signature": [
+        {
+          "ID": [
+            {
+              "_": "urn:oasis:names:specification:ubl:signature:Invoice"
+            }
+          ],
+          "SignatureMethod": [
+            {
+              "_": "urn:oasis:names:specification:ubl:dsig:enveloped:xades"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

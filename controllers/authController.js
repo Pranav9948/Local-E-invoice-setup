@@ -47,7 +47,7 @@ exports.loginAsIntermediary = async (req, res) => {
         }
     } catch (error) {
 
-        console.log('error'.red,error.response.data)
+        console.log('error'.red,error?.response?.data)
         
         res.status(400).json({ error: error.response?.data?.error || 'Authentication failed' });
     }
