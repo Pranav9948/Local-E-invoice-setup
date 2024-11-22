@@ -649,3 +649,21 @@ exports.generateInvoice=(agentBooking,packageRooms,bookingTransportation,booking
 
     return invoice;
 }
+
+
+exports.validateRequest=(tin, idType, idValue)=> {
+    if (!tin) {
+        return "Invalid or missing TIN";
+    }
+
+    const validIdTypes = ["NRIC", "PASSPORT", "BRN", "ARMY"];
+    if (!idType || !validIdTypes.includes(idType.toUpperCase())) {
+        return `Invalid or missing ID Type. Must be one of: ${validIdTypes.join(", ")}`;
+    }
+
+    if (!idValue) {
+        return "Missing ID Value";
+    }
+
+    return null; 
+}

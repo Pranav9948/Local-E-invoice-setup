@@ -1,6 +1,7 @@
 
 
 const express = require('express');
+const generalRoutes = require('./routes/generalRoutes');
 const authRoutes = require('./routes/authRoutes');
 const inVoiceRoutes = require('./routes/invoiceRoutes');
 const bodyParser = require('body-parser');
@@ -18,7 +19,7 @@ app.use(bodyParser.raw({ type: 'application/xml', limit: '10mb' }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }))
 
-
+app.use('/api/general', generalRoutes);
 app.use('/api/auth', authRoutes);
 app.use('/api/invoice', inVoiceRoutes);
 
